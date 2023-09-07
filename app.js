@@ -40,9 +40,10 @@ app.get('/', (req, res) => {
 
 app.get("hourly",(req) => {
 
-    let hourlyPageData = {
+    let hourlyPageData = {"tabledata": [
         "hour": 13
         "price": 31.44
+        
     };
 
     res.render("hourly", hourlyPageData)
