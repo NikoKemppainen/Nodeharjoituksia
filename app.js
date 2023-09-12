@@ -4,17 +4,19 @@
 // LIBRARIES AND MODULES
 // ---------------------
 
+
 // Use Express as web engine
 const express = require('express');
 // Use Express Handlebars as template engine
 const {engine} = require('express-handlebars');
-
+ 
 // EXPRESS APPLICATION SETTINGS
 // ----------------------------
 
 // Create the server
 const app = express();
 const PORT = process.env.PORT || 8080;
+
 
 // Set folder paths: public is for assets and views for pages
 app.use(express.static('public'));
@@ -67,3 +69,4 @@ app.get("/hourly",(req, res) => {
 // START THE LISTENER
 app.listen(PORT);
 console.log('Server started and it will listen TCP port', PORT);
+

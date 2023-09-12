@@ -25,11 +25,10 @@ table {
     border: 1px solid #ddd;
     border-spacing: 0;
     border-collapse: separate;
-    overflow: hidden;
 
-    /* prevent table data and header background color exceeding table boundaries
-    This is needed because table has rounded corners */ 
-    overflow hidden;
+    /* Prevent table data and header background color exceeding table boundaries
+    This is needed because table has rounded corners */
+    overflow: hidden;
 }
 
 /* Set every other row (even) to light gray background*/
@@ -39,7 +38,7 @@ tr:nth-child(even){background-color: #979797;}
 th {
     padding: 10px;
     color:#070707;
-    background-color: (rgba(255, 251, 0, 0.671);
+    background-color: rgba(212, 209, 8, 0.671);
 }
 
 /* Table data column settings */
